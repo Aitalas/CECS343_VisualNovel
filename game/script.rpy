@@ -63,6 +63,7 @@ screen clue_added(clue):
             
         vbox:
             spacing 10
+            xsize 400
             text clue + " added to inventory!" size 20
             textbutton "Close" action Hide("clue_added")
         
