@@ -37,29 +37,10 @@ screen clues:
         
         hbox:               #title box 
             spacing 10
-<<<<<<< HEAD
-            box_wrap True
             
             text "Clues" size 30
             textbutton "Hide Clues" action Hide("clues")
-        
-        viewport:
-            mousewheel True
-            scrollbars "vertical"
-        
-            vbox:               #add vbox to frame
-                spacing 10      #10px between each element
-                box_wrap True       
-                null height 40  #add space under the title
-                
-                #add items from clues_array
-                for i in clues_array:
-                        text i      #add items
-=======
-            text "Clues" size 30
-            #null width 320
-            textbutton "Hide Clues" action Hide("clues")
-        
+
         vbox:               #add vbox to frame
             spacing 10      #10px between each element
             box_wrap True       
@@ -68,8 +49,7 @@ screen clues:
             #add items from clues_array
             for i in clues_array:
                     text i      #add items
->>>>>>> cdcb29f7a9ee6c75211dda4586f640784bd4fc0f
-            
+                        
 screen clue_added(clue):
     modal True          #prevent user from clicking on things outside this screen
     frame:
@@ -77,11 +57,7 @@ screen clue_added(clue):
         yalign 0.5
         xpadding 10
         ypadding 10
-<<<<<<< HEAD
             
-=======
-        
->>>>>>> cdcb29f7a9ee6c75211dda4586f640784bd4fc0f
         vbox:
             spacing 10
             text clue + " added to inventory!" size 20
@@ -107,7 +83,6 @@ label start:
     $ clues_array.append("Time of Death: 8:00PM")
     $ clues_array.append("Location: By the flower shop.")
     
-<<<<<<< HEAD
     $ clues_array.append("Murder Weapon: Unknown. Seems the killer took it with them.")
     $ clues_array.append("Murder Weapon: Unknown. Seems the killer took it with them.")
     $ clues_array.append("Murder Weapon: Unknown. Seems the killer took it with them.")
@@ -115,9 +90,7 @@ label start:
     $ clues_array.append("Murder Weapon: Unknown. Seems the killer took it with them.")
     $ clues_array.append("Murder Weapon: Unknown. Seems the killer took it with them.")
     $ clues_array.append("Murder Weapon: Unknown. Seems the killer took it with them.")
-    
-=======
->>>>>>> cdcb29f7a9ee6c75211dda4586f640784bd4fc0f
+
     e "Try opening your inventory!"
 
     return

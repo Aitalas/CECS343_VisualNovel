@@ -2,9 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 20: invalid syntax
-        show screen clue_added("item 1")
-                   ^
-    
+File "game/script.rpy", line 38: Line is indented, but the preceding viewport statement does not expect a block. Please check this line's indentation.
+    scrollbar "vertical"
+    ^
 
 Ren'Py Version: Ren'Py 6.17.7.521

@@ -23,19 +23,18 @@ init -1 python hide:
     ## This controls the title of the window, when Ren'Py is
     ## running in a window.
 
-<<<<<<< HEAD
     config.window_title = u"TestProject"
 
     # These control the name and version of the game, that are reported
     # with tracebacks and other debugging logs.
     config.name = "TestProject"
-=======
+
     config.window_title = u"CECS343_VisualNovel"
 
     # These control the name and version of the game, that are reported
     # with tracebacks and other debugging logs.
     config.name = "CECS343_VisualNovel"
->>>>>>> cdcb29f7a9ee6c75211dda4586f640784bd4fc0f
+
     config.version = "0.0"
 
     #########################################
@@ -47,13 +46,14 @@ init -1 python hide:
     ## The theme function takes a number of parameters that can
     ## customize the color scheme.
 
-<<<<<<< HEAD
+
     theme.regal(
         ## Theme: Regal
-=======
+    )
+    
     theme.threeD(
         ## Theme: 3D
->>>>>>> cdcb29f7a9ee6c75211dda4586f640784bd4fc0f
+
         ## Color scheme: Muted Horror
 
         ## The color of an idle widget face.
@@ -275,11 +275,8 @@ init -1 python hide:
     ## stored. (It needs to be set early, before any other init code
     ## is run, so the persistent information can be found by the init code.)
 python early:
-<<<<<<< HEAD
     config.save_directory = "TestProject-1412219024"
-=======
     config.save_directory = "CECS343_VisualNovel-1411950791"
->>>>>>> cdcb29f7a9ee6c75211dda4586f640784bd4fc0f
 
 init -1 python hide:
     #########################################
