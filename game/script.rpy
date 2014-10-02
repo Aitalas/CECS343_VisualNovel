@@ -37,18 +37,21 @@ screen clues:
         
         hbox:               #title box 
             spacing 10
-            
             text "Clues" size 30
             textbutton "Hide Clues" action Hide("clues")
 
-        vbox:               #add vbox to frame
-            spacing 10      #10px between each element
-            box_wrap True       
-            null height 40  #add space under the title
-            
-            #add items from clues_array
-            for i in clues_array:
-                    text i      #add items
+        viewport:
+            mousewheel True
+            scrollbars "vertical"
+
+            vbox:               #add vbox to frame
+                spacing 10      #10px between each element
+                null height 40  #add space under the title
+                
+                #add items from clues_array
+                for i in clues_array:
+                        text i      #add items
+                        
                         
 screen clue_added(clue):
     modal True          #prevent user from clicking on things outside this screen
@@ -83,14 +86,7 @@ label start:
     $ clues_array.append("Time of Death: 8:00PM")
     $ clues_array.append("Location: By the flower shop.")
     
-    $ clues_array.append("Murder Weapon: Unknown. Seems the killer took it with them.")
-    $ clues_array.append("Murder Weapon: Unknown. Seems the killer took it with them.")
-    $ clues_array.append("Murder Weapon: Unknown. Seems the killer took it with them.")
-    $ clues_array.append("Murder Weapon: Unknown. Seems the killer took it with them.")
-    $ clues_array.append("Murder Weapon: Unknown. Seems the killer took it with them.")
-    $ clues_array.append("Murder Weapon: Unknown. Seems the killer took it with them.")
-    $ clues_array.append("Murder Weapon: Unknown. Seems the killer took it with them.")
-
+    show screen clue_added("Clues")
+    
     e "Try opening your inventory!"
-
     return

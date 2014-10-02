@@ -1,25 +1,55 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While parsing C:\Users\Aphrodite\Desktop\Dropbox\CECS343_VisualNovel/game/script.rpy.
-ScriptError: Name (u'/home/tom/ab/renpy/template/game/script.rpy', 1341714480, 1) is defined twice: at game/script.rpy:10 and game/script.rpy:10.
+While running game code:
+  File "game/script.rpy", line 130, in script
+    e "Try opening your inventory!"
+  File "game/script.rpy", line 62, in <module>
+    yadjustment adj
+NameError: name 'adj' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\Aphrodite\Desktop\renpy-6.17.7-sdk\renpy\bootstrap.py", line 285, in bootstrap
-    renpy.main.main()
-  File "C:\Users\Aphrodite\Desktop\renpy-6.17.7-sdk\renpy\main.py", line 248, in main
-    renpy.game.script.load_script() # sets renpy.game.script.
-  File "C:\Users\Aphrodite\Desktop\renpy-6.17.7-sdk\renpy\script.py", line 177, in load_script
-    self.load_appropriate_file(".rpyc", ".rpy", dir, fn, initcode)
-  File "C:\Users\Aphrodite\Desktop\renpy-6.17.7-sdk\renpy\script.py", line 447, in load_appropriate_file
-    if not self.load_file(dir, fn + compiled, initcode):
-  File "C:\Users\Aphrodite\Desktop\renpy-6.17.7-sdk\renpy\script.py", line 320, in load_file
-    self.finish_load(stmts, initcode)
-  File "C:\Users\Aphrodite\Desktop\renpy-6.17.7-sdk\renpy\script.py", line 392, in finish_load
-    node.filename, node.linenumber))
-ScriptError: Name (u'/home/tom/ab/renpy/template/game/script.rpy', 1341714480, 1) is defined twice: at game/script.rpy:10 and game/script.rpy:10.
+  File "game/script.rpy", line 130, in script
+    e "Try opening your inventory!"
+  File "C:\Users\Aphrodite\Desktop\renpy-6.17.7-sdk\renpy\ast.py", line 558, in execute
+    renpy.exports.say(who, what, interact=self.interact)
+  File "C:\Users\Aphrodite\Desktop\renpy-6.17.7-sdk\renpy\exports.py", line 925, in say
+    who(what, interact=interact)
+  File "C:\Users\Aphrodite\Desktop\renpy-6.17.7-sdk\renpy\character.py", line 817, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "C:\Users\Aphrodite\Desktop\renpy-6.17.7-sdk\renpy\character.py", line 683, in do_display
+    **display_args)
+  File "C:\Users\Aphrodite\Desktop\renpy-6.17.7-sdk\renpy\character.py", line 486, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\Aphrodite\Desktop\renpy-6.17.7-sdk\renpy\ui.py", line 264, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Aphrodite\Desktop\renpy-6.17.7-sdk\renpy\display\core.py", line 2065, in interact
+    repeat, rv = self.interact_core(preloads=preloads, **kwargs)
+  File "C:\Users\Aphrodite\Desktop\renpy-6.17.7-sdk\renpy\display\core.py", line 2309, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "C:\Users\Aphrodite\Desktop\renpy-6.17.7-sdk\renpy\display\core.py", line 306, in visit_all
+    d.visit_all(callback)
+  File "C:\Users\Aphrodite\Desktop\renpy-6.17.7-sdk\renpy\display\core.py", line 306, in visit_all
+    d.visit_all(callback)
+  File "C:\Users\Aphrodite\Desktop\renpy-6.17.7-sdk\renpy\display\core.py", line 306, in visit_all
+    d.visit_all(callback)
+  File "C:\Users\Aphrodite\Desktop\renpy-6.17.7-sdk\renpy\display\core.py", line 308, in visit_all
+    callback(self)
+  File "C:\Users\Aphrodite\Desktop\renpy-6.17.7-sdk\renpy\display\core.py", line 2309, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "C:\Users\Aphrodite\Desktop\renpy-6.17.7-sdk\renpy\display\screen.py", line 181, in per_interact
+    self.update()
+  File "C:\Users\Aphrodite\Desktop\renpy-6.17.7-sdk\renpy\display\screen.py", line 288, in update
+    self.screen.function(**self.scope)
+  File "C:\Users\Aphrodite\Desktop\renpy-6.17.7-sdk\renpy\screenlang.py", line 1239, in __call__
+    renpy.python.py_exec_bytecode(self.code.bytecode, locals=scope)
+  File "C:\Users\Aphrodite\Desktop\renpy-6.17.7-sdk\renpy\python.py", line 1382, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/script.rpy", line 62, in <module>
+    yadjustment adj
+NameError: name 'adj' is not defined
 
 Windows-7-6.1.7601-SP1
 Ren'Py 6.17.7.521
- 
+CECS343_VisualNovel 0.0
