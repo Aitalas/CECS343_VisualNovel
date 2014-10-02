@@ -9,6 +9,12 @@
 # Declare characters used by this game.
 define e = Character('Eileen', color="#c8ffc8")
 
+image bestfriend = "images/bestfriend.png"
+image boyfriend = "images/boyfriend.png"
+image detective = "images/detective.png"
+image excon = "images/excon.png"
+image victim = "images/victim.png"
+
 #----------------------------------------------------------------------------------
 #       Init block
 #       initialize the array of clues for use in the screens
@@ -48,9 +54,16 @@ screen clues:
                 spacing 10      #10px between each element
                 null height 40  #add space under the title
                 
-                #add items from clues_array
+                $ color = False
+                
+                #add items from clues_array and alternate colors
                 for i in clues_array:
-                        text i      #add items
+                    if color:
+                        text i color "#c8ffc8"
+                        $ color = False
+                    else 
+                        text i 
+                        $ color = True
                         
                         
 screen clue_added(clue):
@@ -73,7 +86,12 @@ screen clue_added(clue):
 
 # The game starts here.
 label start:
+    $ clues_array = []  #reset contents of array in case of replays
     show screen clues_button
+    
+    show victim at left
+    show boyfriend at right
+    show bestfriend at center
     
     e "You've created a new Ren'Py game."
 
