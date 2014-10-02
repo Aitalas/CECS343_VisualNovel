@@ -1,0 +1,29 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 66, in script
+    e "Oh look, you found [Item 3]!"
+KeyError: u'Item 3'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 66, in script
+    e "Oh look, you found [Item 3]!"
+  File "C:\Users\Aphrodite\Desktop\renpy-6.17.7-sdk\renpy\ast.py", line 558, in execute
+    renpy.exports.say(who, what, interact=self.interact)
+  File "C:\Users\Aphrodite\Desktop\renpy-6.17.7-sdk\renpy\exports.py", line 925, in say
+    who(what, interact=interact)
+  File "C:\Users\Aphrodite\Desktop\renpy-6.17.7-sdk\renpy\character.py", line 808, in __call__
+    what = what_pattern.replace("[what]", sub(what, translate=translate))
+  File "C:\Users\Aphrodite\Desktop\renpy-6.17.7-sdk\renpy\substitutions.py", line 223, in substitute
+    s = formatter.vformat(s, (), kwargs)
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 549, in vformat
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 571, in _vformat
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 632, in get_field
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 591, in get_value
+KeyError: u'Item 3'
+
+Windows-7-6.1.7601-SP1
+Ren'Py 6.17.7.521
+CECS343_VisualNovel 0.0
