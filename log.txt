@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 Wed Oct 01 20:06:09 2014
 Windows-7-6.1.7601-SP1
 Ren'Py 6.17.7.521
 TestProject 0.0
+=======
+Wed Oct 01 19:36:50 2014
+Windows-7-6.1.7601-SP1
+Ren'Py 6.17.7.521
+CECS343_VisualNovel 0.0
+>>>>>>> cdcb29f7a9ee6c75211dda4586f640784bd4fc0f
 
 
 Windowed mode.
@@ -119,6 +126,7 @@ Texture testing:
 Performance test:
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
+<<<<<<< HEAD
 - Frame drawn at 0.015000 seconds.
 - Frame drawn at 0.017000 seconds.
 - Frame drawn at 0.020000 seconds.
@@ -366,6 +374,13 @@ Performance test:
 - Frame drawn at 0.034000 seconds.
 - Frame drawn at 0.038000 seconds.
 - 0.038000 seconds to render 5 frames.
+=======
+- Frame drawn at 0.020000 seconds.
+- Frame drawn at 0.023000 seconds.
+- Frame drawn at 0.026000 seconds.
+- Frame drawn at 0.029000 seconds.
+- 0.029000 seconds to render 5 frames.
+>>>>>>> cdcb29f7a9ee6c75211dda4586f640784bd4fc0f
 
 Windowed mode.
 Screen sizes: virtual=(800, 600) physical=(800, 600)
@@ -482,6 +497,7 @@ Texture testing:
 Performance test:
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
+<<<<<<< HEAD
 - Frame drawn at 0.013000 seconds.
 - Frame drawn at 0.016000 seconds.
 - Frame drawn at 0.018000 seconds.
@@ -492,3 +508,10 @@ The window was restored.
 
 Windowed mode.
 Screen sizes: virtual=(800, 600) physical=(800, 600)
+=======
+- Frame drawn at 0.028000 seconds.
+- Frame drawn at 0.036000 seconds.
+- Frame drawn at 0.039000 seconds.
+- Frame drawn at 0.043000 seconds.
+- 0.043000 seconds to render 5 frames.
+>>>>>>> cdcb29f7a9ee6c75211dda4586f640784bd4fc0f
